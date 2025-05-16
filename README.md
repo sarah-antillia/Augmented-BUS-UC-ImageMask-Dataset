@@ -48,7 +48,7 @@ CC BY 4.0
 <br>
 
 <h3>2. ImageMaskDataset Generation</h3>
-<h3>2.1 Download BUS-UC dataset</h3>
+<h3>2.1 Download BUS_UC dataset</h3>
 
 If you would like to generate this Augmented dataset by yourself,
 please download the master dataset from 
@@ -58,7 +58,7 @@ Mendeley Data: BUS_UC</a>
 <br>
 
 <h3>2.2 Generate colored mask files</h3>
-  The BUS-UC dataset includes 2 types of images and masks data, Benign and Malignant,
+  The BUS_UC dataset includes 2 types of images and masks data, Benign and Malignant,
   but those mask files are all white-black image.
 Therefore, we created green and red colored mask files from masks in Benign and Malignant dataset.
 by using Python script <a href="./MaskColorizer.py">MaskColorizer.py</a><br>
@@ -106,7 +106,7 @@ Please run the following command for Python <a href="./split_augmented_master.py
 </pre>
 This splits Augmented-BUS-UC-master into test, train and valid subdatasets.<br>
 <pre>
-./Augmented-BUS-UC-ImageMask-Dataset-M1
+./Augmented-BUS-UC-ImageMask-Dataset
 ├─test
 │  ├─images
 │  └─masks
