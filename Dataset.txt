@@ -1,0 +1,31 @@
+License: CC BY-NC-SA 4.0
+
+On detail, please refer to the following web-site. 
+https://monuseg.grand-challenge.org/Data/
+
+Introduction
+The dataset for this challenge was obtained by carefully annotating tissue images of several patients with tumors of different organs and who were diagnosed at multiple hospitals. This dataset was created by downloading H&E stained tissue images captured at 40x magnification from TCGA archive. H&E staining is a routine protocol to enhance the contrast of a tissue section and is commonly used for tumor assessment (grading, staging, etc.). Given the diversity of nuclei appearances across multiple organs and patients, and the richness of staining protocols adopted at multiple hospitals, the training datatset will enable the development of robust and generalizable nuclei segmentation techniques that will work right out of the box.
+
+The challenge data is released under the creative commons license (CC BY-NC-SA 4.0).
+
+Training Data
+Training data containing 30 images and around 22,000 nuclear boundary annotations has been released to the public previously as a dataset article in IEEE Transactions on Medical imaging in 2017. The details can be found in the related publication:
+
+N. Kumar, R. Verma, S. Sharma, S. Bhargava, A. Vahadane and A. Sethi, "A Dataset and a Technique for Generalized Nuclear Segmentation for Computational Pathology," in IEEE Transactions on Medical Imaging, vol. 36, no. 7, pp. 1550-1560, July 2017 [code]
+The dataset (images and annotations) can be downloaded using the following links- MoNuSeg 2018 Training data
+Supplementary document containing organ information is availabe at the following link- Training data organ information
+MATLAB Code for reading in xml annotations can be downloaded at the following link- HE_to_binary_nary_masks.m
+No external data should be used for training, it is the violation of the spirit and rules of challenge.
+Testing Data
+
+Test set images with additional 7000 nuclear boundary annotations are available here MoNuSeg 2018 Testing data. Please cite the following papers if you use the training and testing datasets of this challenge:
+
+N. Kumar et al., "A Multi-organ Nucleus Segmentation Challenge," in IEEE Transactions on Medical Imaging (in press) [Supplementary Information] [Code]
+
+N. Kumar, R. Verma, S. Sharma, S. Bhargava, A. Vahadane and A. Sethi, "A Dataset and a Technique for Generalized Nuclear Segmentation for Computational Pathology," in IEEE Transactions on Medical Imaging, vol. 36, no. 7, pp. 1550-1560, July 2017 [Code]
+
+Instructions given to the participants
+
+Five weeks before the challenge, a test set of 14 new images will be released only to the participating teams who have submitted their methodology manuscripts before the deadline, upon assigning the agreements. The format of the new cases will be exactly the same as the training data (without annotations).
+
+
