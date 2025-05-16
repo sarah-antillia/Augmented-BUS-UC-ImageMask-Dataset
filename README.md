@@ -1,6 +1,6 @@
 <h2>Augmented-BUS-UC-ImageMask-Dataset (2025/05/17)</h2>
 
-This is a 512x512 pixels Augmented Benign and Malignant ImageMask Dataset derived by us from 
+This is a 512x512 pixels Augmented BUS_UC Benign and Malignant ImageMask Dataset derived by us from 
 <a href="https://data.mendeley.com/datasets/3ksd7w7jkx/1">
 Mendeley Data: BUS_UC</a>
 <br>
@@ -59,7 +59,7 @@ Mendeley Data: BUS_UC</a>
 
 <h3>2.2 Generate colored mask files</h3>
   The BUS_UC dataset includes 2 types of images and masks data, Benign and Malignant,
-  but those mask files are all white-black image.
+  but those mask files are all white-black images.
 Therefore, we created green and red colored mask files from masks in Benign and Malignant dataset.
 by using Python script <a href="./MaskColorizer.py">MaskColorizer.py</a><br>
 
