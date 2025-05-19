@@ -25,7 +25,7 @@ import traceback
 import random
 
 def split_master(images_dir, masks_dir, output_dir):
-  image_files = glob.glob(images_dir + "/*.jpg")
+  image_files = glob.glob(images_dir + "/*.png")
   random.seed(137)
   random.shuffle(image_files)
   num = len(image_files)
@@ -70,7 +70,7 @@ if __name__ == "__main__":
   try:
     images_dir = "./Augmented-BUS-UC-master/images/"
     masks_dir  = "./Augmented-BUS-UC-master/masks/"
-    output_dir = "./Augmented-BUS-UC-ImageMask-Dataset/"
+    output_dir = "./Augmented-PNG-BUS-UC-ImageMask-Dataset/"
 
     if os.path.exists(output_dir):
       shutil.rmtree(output_dir)

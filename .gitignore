@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+Augmented-PNG-BUS-UC-ImageMask-Dataset/
+Augmented-PNG-BUS-UC-master/
+
 Augmented-BUS-UC-ImageMask-Dataset/
 Augmented-BUS-UC-master/
 BUS_UC/

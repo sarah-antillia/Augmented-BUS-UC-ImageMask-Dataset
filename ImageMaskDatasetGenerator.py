@@ -13,6 +13,7 @@
 # limitations under the License.
 #
 # 2025/05/16 ImageMaskDatasetGenerator.py
+# 2025/05/19 Modified to generate PNG files.
 
 import os
 import sys
@@ -68,7 +69,8 @@ class ImageMaskDatasetGenerator:
     if self.augmentation:
       self.hflip    = True
       self.vflip    = True
-      self.rotation = False
+      # 2025/05/19
+      self.rotation = True
       #self.ANGLES   = [20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340]
       self.ANGLES   = [90, 180, 270]
 
@@ -101,8 +103,11 @@ class ImageMaskDatasetGenerator:
 
 
   def generate(self):
-    mask_files  = glob.glob(self.masks_dir + "/*.jpg")
-    image_files = glob.glob(self.images_dir + "/*.jpg")
+    #2025/05/19
+    #mask_files  = glob.glob(self.masks_dir + "/*.jpg")
+    #image_files = glob.glob(self.images_dir + "/*.jpg")
+    mask_files  = glob.glob(self.masks_dir + "/*.png")
+    image_files = glob.glob(self.images_dir + "/*.png")
     masK_files = sorted(mask_files)
     image_file = sorted(image_files)
     l1 = len(mask_files)
@@ -150,7 +155,7 @@ class ImageMaskDatasetGenerator:
      #image = cv2.resize(image, (self.RESIZE))
      image = self.resize_to_square(image, mask=mask)
 
-     basename = str(index)  + ".jpg" 
+     basename = str(index)  + ".png" 
      filepath = os.path.join(output_dir, basename)
      cv2.imwrite(filepath, image)
      if self.augmentation:
@@ -395,7 +400,7 @@ if __name__ == "__main__":
  
     images_dir  = "./BUS-UC-master/images/"
     masks_dir   = "./BUS-UC-master/masks/"
-    output_dir  = "./Augmented-BUS-UC-master"
+    output_dir  = "./Augmented-PNG-BUS-UC-master"
     angle       = cv2.ROTATE_90_COUNTERCLOCKWISE
     augmentation= True
     generator = ImageMaskDatasetGenerator(images_dir  = images_dir, 

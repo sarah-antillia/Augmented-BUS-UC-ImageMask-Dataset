@@ -1,5 +1,7 @@
-<h2>Augmented-BUS-UC-ImageMask-Dataset (2025/05/17)</h2>
+<h2>Augmented-BUS-UC-ImageMask-Dataset (Updated: 2025/05/19)</h2>
 
+<li>2025/05/19: Modified to generate PNG dataset.</li>
+<br>
 This is a 512x512 pixels Augmented BUS_UC Benign and Malignant ImageMask Dataset derived by us from 
 <a href="https://data.mendeley.com/datasets/3ksd7w7jkx/1">
 Mendeley Data: BUS_UC</a>
@@ -7,9 +9,16 @@ Mendeley Data: BUS_UC</a>
 
 <br>
 <b>Download our dataset</b><br>
-You can download our dataset from the google drive 
+You can download our PNG dataset from the google drive:<br>
+<li>
+<a href="https://drive.google.com/file/d/1fA9j_vM_c5K98Bqd-Urmq2FYFHw_jS7R/view?usp=sharing">
+Augemented-PNG-BUS-UC-ImageMask-Data.zip</a>
+</li>
+and JPG dataset<br>
+<li>
 <a href="https://drive.google.com/file/d/1ObyZhN7up0Crhxsi5dkcu9oUo_zVQCL3/view?usp=sharing">
 Augemented-BUS-UC-ImageMask-Data.zip</a>
+</li>
 <br>
 
 <h3>1. Dataset Citation</h3>
@@ -99,14 +108,14 @@ to augment BUS-UC-master dataset, The tool supports the following data augmentat
 
 <h3>2.3 Split master</h3>
 
-Please run the following command for Python <a href="./split_augmented_master.py">split_augmented__master.py</a> 
+Please run the following command for Python <a href="./split_augmented_master.py">split_augmented_master.py</a> 
 <br>
 <pre>
 >python split_augmented_master.py
 </pre>
-This splits Augmented-BUS-UC-master into test, train and valid subdatasets.<br>
+This splits Augmented-PNG-BUS-UC-master into test, train and valid subdatasets.<br>
 <pre>
-./Augmented-BUS-UC-ImageMask-Dataset
+./Augmented-PNG-BUS-UC-ImageMask-Dataset
 ├─test
 │  ├─images
 │  └─masks
@@ -119,10 +128,10 @@ This splits Augmented-BUS-UC-master into test, train and valid subdatasets.<br>
 </pre>
 <hr>
 Train images sample<br>
-<img src="./asset/Augmented-BUS-UC-ImageMaskDataset-train-images-sample.png" width=1024 heigh="auto"><br><br>
+<img src="./asset/Augmented-PNG-BUS-UC-ImageMaskDataset-train-images-sample.png" width=1024 heigh="auto"><br><br>
 Train mask sample<br>
-<img src="./asset/Augmented-BUS-UC-ImageMaskDataset-train-masks-sample.png" width=1024 heigh="auto"><br><br>
+<img src="./asset/Augmented-PNG-BUS-UC-ImageMaskDataset-train-masks-sample.png" width=1024 heigh="auto"><br><br>
 
 
 Dataset Statistics <br>
-<img src="./Augmented-BUS-UC-ImageMask-Dataset_Statistics.png" width="512" height="auto"><br>
+<img src="./Augmented-PNG-BUS-UC-ImageMask-Dataset_Statistics.png" width="512" height="auto"><br>
